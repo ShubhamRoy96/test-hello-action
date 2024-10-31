@@ -1,0 +1,29 @@
+name: This is my pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run_pipeline:
+    name: This is my pipeline job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - id: step_1
+        name: Step 1
+        run: |
+          echo "Hello from step 1"
+
+      - id: step_2
+        name: Step 2
+        run: |
+          echo "Hello from step 2"
+
+      - id: step_3
+        name: Step 3
+        run: |
+          echo "Hello from step 3"
+    
+

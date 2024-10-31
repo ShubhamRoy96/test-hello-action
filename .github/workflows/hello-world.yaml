@@ -25,5 +25,25 @@ jobs:
         name: Step 3
         run: |
           echo "Hello from step 3"
-    
+  run_pipeline_2:
+    name: This is my second pipeline job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - id: step_4
+        name: Step 4
+        run: |
+          echo "Hello from step 4"
+
+      - id: step_5
+        name: Step 5
+        run: |
+          echo "Hello from step 5"
+
+      - id: step_6
+        name: Step 6
+        run: |
+          echo "Hello from step 6"
 

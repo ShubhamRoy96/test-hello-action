@@ -48,3 +48,8 @@ jobs:
         run: |
           echo "Hello from step 6"
 
+      - id: step_7
+        name: Step 7
+        run: |
+          echo "Hello from step 7"
+
